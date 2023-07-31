@@ -22,7 +22,8 @@ class IdolModel{
     }
 
     /**
-     * setter 값을 바꿀 때 사용
+     * setter 
+     * 값을 새로 저장할 때 사용
      */
     set name(name){
         this.name = name;
