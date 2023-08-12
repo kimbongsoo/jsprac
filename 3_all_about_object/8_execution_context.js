@@ -10,3 +10,28 @@
  * 2) Function Context -> 함수가 실행될때마다 함수별로 실행되는 context다. 함수 실행에 대한 모든 정보를 갖는다.
  * 
  */
+
+/**
+ * JS는 sigle thread program이다.
+ * 
+ * sigle thread에는 Memory Heap과 Call Stack (Execution Context Stack)이 있다.
+ */
+
+function one(){
+    console.log('run one');
+    console.log('run one finished');
+}
+
+function two(){
+    console.log('run two');
+    one();
+    console.log('run two finished');
+}
+
+function three(){
+    console.log('run three');
+    two();
+    console.log('run three finished');
+}
+
+three();
