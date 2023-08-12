@@ -35,3 +35,16 @@ function three(){
 }
 
 three();
+
+/**
+ * Execution Context Stack이 생성될 때
+ * 
+ * Creation Phase
+ * - Global Object를 생성한다. window 또는 global 객체가 생성되고 함수에서는 arguments 객체가 생성된다.
+ * - this를 window 또는 global에 바인딩한다.
+ * - 변수와 함수를 Memory Heap에 배정하고 기본 값을 undefined로 저장한다. ex) hoisting이 일어나는 이유 creation phase가 먼저 선언되기 때문에
+ * 
+ * Execution Phase
+ * - 코드를 실행한다.
+ * - 필요하다면 새로운 Execution Context를 생성한다.
+ */
